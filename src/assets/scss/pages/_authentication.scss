@@ -1,0 +1,71 @@
+#auth-page {
+  height: 90vh;
+
+  .auth-content {
+    // background: burlywood;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+
+    a {
+        text-decoration: none;
+    }
+
+    .select-auth {
+      a {
+        width: 100%;
+        // border-radius: 0.625rem 0.625rem 0 0;
+        border-radius: 0.625rem;
+        text-decoration: none;
+        color: #acacac;
+        padding: 0.625rem;
+        transition: 0.3s;
+
+        &:hover {
+            color: #3d3d3d;
+        }
+
+        &.active {
+            color: #0066ff;
+            border: 1px solid #555;
+        }
+      }
+    }
+
+    h4 {
+      margin: 1rem 0;
+    }
+
+    #sign-in-with-email-password {
+      input {
+        border: 0;
+        border-bottom: 1px solid #d4d4d4;
+        border-radius: 0;
+        margin: 0.625rem 0;
+      }
+
+      .form-floating > .form-control {
+        height: 4rem;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    #sign-in-with-other {
+        button {
+            width: 100%;
+            margin-top: 1rem;
+            color: #333;
+            border: 1px solid #333;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.1, 1.1);
+            }
+        }
+    }
+  }
+}
